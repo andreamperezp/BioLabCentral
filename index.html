@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioLab Central · Laboratorio Clínico</title>
+  <meta name="description" content="Laboratorio clínico con análisis de sangre, pruebas moleculares y resultados en línea." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="BioLab Central inicio">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="var(--primary)"/>
+          <path d="M12 8h8M14 8v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11 20h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>BioLab<strong>Central</strong></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo funciona</a>
+        <a href="#sedes">Sedes</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contacto" class="btn btn--primary nav__cta">Agendar cita</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="badge">● Acreditado ISO 15189</span>
+          <h1>Resultados precisos,<br/><span class="accent">cuando los necesitas.</span></h1>
+          <p class="lead">Análisis clínicos, pruebas moleculares y toma de muestras a domicilio. Consulta tus resultados en línea en menos de 24 horas.</p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary btn--lg">Agendar cita</a>
+            <a href="#resultados" class="btn btn--ghost btn--lg">Ver mis resultados</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>+250</strong><span>tipos de pruebas</span></li>
+            <li><strong>24 h</strong><span>entrega promedio</span></li>
+            <li><strong>12</strong><span>sedes</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="card-float card-float--main">
+            <div class="cf__head">
+              <span class="dot dot--ok"></span>
+              <span>Hemograma completo</span>
+            </div>
+            <div class="cf__row"><span>Hemoglobina</span><b>14.2 g/dL</b></div>
+            <div class="bar"><i style="width:72%"></i></div>
+            <div class="cf__row"><span>Leucocitos</span><b>6.8 ×10³/µL</b></div>
+            <div class="bar"><i style="width:55%"></i></div>
+            <div class="cf__row"><span>Plaquetas</span><b>250 ×10³/µL</b></div>
+            <div class="bar"><i style="width:64%"></i></div>
+            <div class="cf__foot">Valores dentro del rango ✓</div>
+          </div>
+          <div class="card-float card-float--mini">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 3h6M10 3v5L4.5 18A2 2 0 0 0 6.3 21h11.4a2 2 0 0 0 1.8-3L14 8V3"/></svg>
+            <div><b>Muestra recibida</b><span>Procesando · 08:42</span></div>
+          </div>
+          <div class="blob"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Servicios</span>
+          <h2>Todo lo que necesitas en un solo laboratorio</h2>
+          <p>Tecnología de última generación y profesionales certificados para cada tipo de análisis.</p>
+        </header>
+
+        <div class="services">
+          <article class="service">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M12 2s6 7 6 12a6 6 0 0 1-12 0c0-5 6-12 6-12z"/></svg></div>
+            <h3>Hematología</h3>
+            <p>Hemograma, coagulación, grupo sanguíneo y velocidad de sedimentación.</p>
+            <a href="#contacto" class="link">Agendar →</a>
+          </article>
+          <article class="service">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 7c4-4 12 4 16 0M4 12c4-4 12 4 16 0M4 17c4-4 12 4 16 0"/></svg></div>
+            <h3>Biología molecular</h3>
+            <p>PCR, pruebas genéticas, detección de virus y paneles respiratorios.</p>
+            <a href="#contacto" class="link">Agendar →</a>
+          </article>
+          <article class="service">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/></svg></div>
+            <h3>Microbiología</h3>
+            <p>Cultivos, antibiogramas y estudios parasitológicos con alta sensibilidad.</p>
+            <a href="#contacto" class="link">Agendar →</a>
+          </article>
+          <article class="service">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+            <h3>Química clínica</h3>
+            <p>Perfil lipídico, glucosa, función renal, hepática y tiroidea.</p>
+            <a href="#contacto" class="link">Agendar →</a>
+          </article>
+          <article class="service">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M3 10l9-6 9 6v10H3z"/><path d="M9 20v-6h6v6"/></svg></div>
+            <h3>Toma a domicilio</h3>
+            <p>Un profesional va a tu casa u oficina en el horario que elijas.</p>
+            <a href="#contacto" class="link">Agendar →</a>
+          </article>
+          <article class="service">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+            <h3>Chequeos empresariales</h3>
+            <p>Programas de salud ocupacional y exámenes de ingreso para empresas.</p>
+            <a href="#contacto" class="link">Cotizar →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="section section--tint" id="proceso">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2>Tu análisis en 3 pasos</h2>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Agenda en línea</h3>
+            <p>Elige la prueba, la sede o el servicio a domicilio, y el horario.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Toma de muestra</h3>
+            <p>Atención rápida, sin filas, con personal certificado y material estéril.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>Resultados digitales</h3>
+            <p>Recibe una notificación y descarga tu informe firmado desde el portal.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Resultados CTA -->
+    <section class="section" id="resultados">
+      <div class="container">
+        <div class="results">
+          <div>
+            <span class="eyebrow eyebrow--light">Portal de pacientes</span>
+            <h2>Consulta tus resultados</h2>
+            <p>Ingresa el código de tu orden que aparece en tu comprobante.</p>
+          </div>
+          <form class="results__form" id="resultsForm">
+            <label for="orderCode" class="sr-only">Código de orden</label>
+            <input id="orderCode" type="text" placeholder="Ej. BLC-204518" required />
+            <button type="submit" class="btn btn--light">Consultar</button>
+            <p class="form-msg" id="resultsMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sedes -->
+    <section class="section" id="sedes">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Sedes</span>
+          <h2>Encuentra el laboratorio más cercano</h2>
+        </header>
+
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" data-city="all" role="tab">Todas</button>
+          <button class="tab" data-city="norte" role="tab">Zona Norte</button>
+          <button class="tab" data-city="centro" role="tab">Centro</button>
+          <button class="tab" data-city="sur" role="tab">Zona Sur</button>
+        </div>
+
+        <div class="locations" id="locations">
+          <article class="location" data-city="centro">
+            <h3>Sede Centro</h3>
+            <p>Av. Principal 120, Piso 2</p>
+            <p class="muted">Lun–Sáb · 6:00–18:00</p>
+            <span class="tag">Abierto ahora</span>
+          </article>
+          <article class="location" data-city="norte">
+            <h3>Sede Norte</h3>
+            <p>Calle 85 #14-30</p>
+            <p class="muted">Lun–Dom · 6:00–20:00</p>
+            <span class="tag">Abierto ahora</span>
+          </article>
+          <article class="location" data-city="sur">
+            <h3>Sede Sur</h3>
+            <p>Centro Comercial Plaza Sur, Local 14</p>
+            <p class="muted">Lun–Sáb · 7:00–17:00</p>
+            <span class="tag tag--muted">Cierra pronto</span>
+          </article>
+          <article class="location" data-city="norte">
+            <h3>Sede Clínica del Norte</h3>
+            <p>Torre Médica, Consultorio 305</p>
+            <p class="muted">Lun–Vie · 6:30–16:00</p>
+            <span class="tag">Abierto ahora</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--tint" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Resolvemos tus dudas</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>¿Necesito ayuno para mis exámenes?</summary>
+            <p>Para glucosa y perfil lipídico se recomienda un ayuno de 8 a 12 horas. Al agendar te indicaremos la preparación exacta de cada prueba.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto tardan los resultados?</summary>
+            <p>La mayoría de los análisis de rutina están listos en menos de 24 horas. Pruebas especializadas pueden tardar entre 3 y 7 días hábiles.</p>
+          </details>
+          <details>
+            <summary>¿Aceptan seguros médicos?</summary>
+            <p>Sí, trabajamos con las principales aseguradoras y medicinas prepagadas. Lleva tu carnet y orden médica el día de la cita.</p>
+          </details>
+          <details>
+            <summary>¿El servicio a domicilio tiene costo adicional?</summary>
+            <p>Tiene un recargo fijo por visita, sin importar la cantidad de pruebas. Es gratuito para órdenes superiores a cierto monto.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <div class="contact__info">
+          <span class="eyebrow">Agenda tu cita</span>
+          <h2>Estamos para cuidarte</h2>
+          <p>Déjanos tus datos y un asesor te confirmará la cita por teléfono o WhatsApp.</p>
+          <ul class="contact__list">
+            <li><b>Teléfono</b> (601) 555 0123</li>
+            <li><b>Correo</b> citas@biolabcentral.com</li>
+            <li><b>Horario</b> Lun–Dom · 6:00–20:00</li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Nombre completo</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+            </div>
+            <div class="field">
+              <label for="date">Fecha</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="service">Servicio</label>
+            <select id="service" name="service" required>
+              <option value="">Selecciona un servicio</option>
+              <option>Hematología</option>
+              <option>Biología molecular</option>
+              <option>Microbiología</option>
+              <option>Química clínica</option>
+              <option>Toma a domicilio</option>
+              <option>Chequeo empresarial</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Solicitar cita</button>
+          <p class="form-msg" id="contactMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 BioLab Central. Sitio de demostración.</p>
+      <nav aria-label="Pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#sedes">Sedes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Barra de acción fija en móvil -->
+  <div class="mobile-bar">
+    <a href="tel:6015550123" class="btn btn--ghost">Llamar</a>
+    <a href="#contacto" class="btn btn--primary">Agendar cita</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
